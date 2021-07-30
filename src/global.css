@@ -1,0 +1,292 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.addNote {
+  border-radius: 50%;
+  background-color: #1e90ff;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin: 10px;
+}
+
+.addNote i {
+  line-height: 30px;
+  font-size: 24px;
+  color: white;
+}
+
+.reset {
+  display: inline-block;
+  margin-left: 7px;
+}
+
+.right-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  background-color: #eeecec;
+  height: 35px;
+  width: 400px;
+  border-radius: 30px;
+}
+
+.icon-chazhao {
+  font-size: 24px;
+}
+
+.find {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 20px;
+  width: 300px;
+  margin-left: 10px;
+}
+
+.reset {
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: #77787b;
+  text-align: center;
+}
+
+.reset i {
+  line-height: 25px;
+  color: white;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eeecec;
+}
+
+.note-left {
+  margin-left: 10px;
+}
+
+.note-name {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.note-time {
+  color: #999d9c;
+}
+
+.note-right i {
+  font-size: 25px;
+  margin-right: 5px;
+  color: #72777b;
+}
+
+.icon-arrow-left-bold {
+  color: black !important;
+}
+
+.icon-arrow-down-bold {
+  color: black !important;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.done {
+  width: 20px;
+  height: 20px;
+  border: grey solid 2px;
+  border-radius: 3px;
+  margin-left: 10px;
+  text-align: center;
+  box-sizing:content-box;
+}
+
+.done i {
+  font-size: 20px;
+  line-height: 20px;
+  color: grey;
+}
+
+.item-content {
+  margin-left: 10px;
+  width: 250px;
+}
+
+.item-record {
+  font-size: 20px;
+}
+
+.item-time {
+  font-size: 17px;
+  color: grey;
+  margin-top: 2px;
+}
+
+.cancel {
+  margin-left: 150px;
+  background: rgb(248, 8, 8);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+}
+
+.cancel i {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.line {
+  height: 1px;
+  width: 450px;
+  border-bottom: solid 1px grey;
+  margin: auto;
+}
+
+@font-face {
+  font-family: "iconfont"; /* Project id 2669435 */
+  src: url('//at.alicdn.com/t/font_2669435_z5l01ieg14.woff2?t=1626116601447') format('woff2'),
+       url('//at.alicdn.com/t/font_2669435_z5l01ieg14.woff?t=1626116601447') format('woff'),
+       url('//at.alicdn.com/t/font_2669435_z5l01ieg14.ttf?t=1626116601447') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gou:before {
+  content: "\e605";
+}
+
+.icon-jianhaocu:before {
+  content: "\e613";
+}
+
+.icon-shijianzhongbiao:before {
+  content: "\e810";
+}
+
+.icon-cha:before {
+  content: "\e61a";
+}
+
+.icon-chazhao:before {
+  content: "\e609";
+}
+
+.icon-ashbin:before {
+  content: "\e665";
+}
+
+.icon-setting:before {
+  content: "\e67d";
+}
+
+.icon-add-bold:before {
+  content: "\e685";
+}
+
+.icon-arrow-left-bold:before {
+  content: "\e686";
+}
+
+.icon-arrow-down-bold:before {
+  content: "\e687";
+}
+
+.modal-overlay{
+  /* visibility: hidden; */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba(66, 66, 66, 0.5);
+}
+
+.modal{
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  box-sizing: content-box;
+}
+
+.modal-header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px rgb(189, 189, 189);
+  align-items: center;
+  box-sizing: content-box;
+}
+
+.modal-cancel{
+  font-size: 20px;
+  margin: 5px;
+  box-sizing: content-box;
+  color: black;
+}
+
+.modal-title{
+  font-size: 18px;
+  box-sizing: content-box;
+}
+
+.modal-save{
+  font-size: 20px;
+  margin: 5px;
+  box-sizing: content-box;
+}
+
+.modal-content{
+  width: 500px;
+  box-sizing: content-box;
+}
+
+.modal-input-title{
+font-size: 18px;
+margin: 10px;
+box-sizing: content-box;
+}
+
+.modal-input{
+  display: block;
+  margin: 8px auto;
+  border: solid grey 3px;
+  border-radius: 5px;
+  height: 25px;
+  width: 470px;
+  font-size: 20px;
+  outline: none;
+  box-sizing: content-box;
+}
+
+.modal-input:focus{
+  border: solid rgb(39, 72, 221) 3px;
+  border-radius: 5px;
+  box-sizing: content-box;
+}
+
+a{
+  color: black;
+}
